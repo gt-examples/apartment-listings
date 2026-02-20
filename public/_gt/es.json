@@ -1,7 +1,33 @@
 {
+  "04f2422fab35977a": "Explora anuncios de alquiler de apartamentos con precios de alquiler, superficies en pies cuadrados y fechas de disponibilidad.",
+  "084c49bd862ec11e": "Vestidores",
+  "086b1e1810412c7c": "Un loft de estilo industrial chic con paredes de ladrillo visto, suelos de hormigón pulido y techos altos. Los grandes ventanales enmarcan las vistas al puerto y al puerto deportivo. El edificio incluye un gimnasio de última generación y una azotea compartida con zonas de parrilla.",
   "086c2b2c7f30f4e6": "Terraza en la azotea",
+  "0911be64622e39c0": {
+    "c": "Año de construcción",
+    "i": 1,
+    "t": "span"
+  },
   "0a4235bb4daeceb6": "Estacionamiento",
-  "0cc2c983267b6a33": "Frente al agua",
+  "0cc2c983267b6a33": "Junto al agua",
+  "0dac3ea9220920cb": "Mantenimiento en las instalaciones",
+  "1068d395a654abe0": "Suelos de madera noble",
+  "127b7b09c18e7b94": "Calefacción y aire acondicionado central",
+  "16e0210363e28906": "Patio compartido",
+  "1b30525016a4a13a": "Edificio libre de humo",
+  "1b5fa67a9e949445": "Patio trasero privado vallado",
+  "1bfd642051e4c3e3": "Se permiten mascotas, con restricciones según la raza",
+  "1c077c519e30b2a5": {
+    "c": "Programar una visita",
+    "i": 1,
+    "t": "button"
+  },
+  "1e1450d0a299f3db": "Un amplio apartamento familiar en un tranquilo complejo residencial. La sala de estar de concepto abierto incluye una chimenea de leña y se integra en un luminoso comedor. El patio trasero privado está completamente cercado, y el garaje adosado para dos coches ofrece aparcamiento seguro y espacio de almacenamiento adicional.",
+  "21be148c67f10152": {
+    "c": "Esto es una demo. No se envían consultas reales.",
+    "i": 1,
+    "t": "p"
+  },
   "22415b5e1a947325": [
     {
       "i": 1,
@@ -16,17 +42,65 @@
       "t": "span"
     }
   ],
+  "2279240270b474d7": "Aparcamiento para bicicletas",
+  "246bbccc390f0013": "Volver a todos los listados",
   "25e98cb6f6224632": "Afueras",
   "2bb522b7c3bffdad": "Chimenea",
+  "3061706374d3eb44": "Barra de desayuno",
+  "33e4c51fffdbdc05": "Paredes de ladrillo visto",
+  "353b08f4363dbb2c": "Pendiente",
   "359d95ca9f95ce5a": "Garaje",
+  "35edf50de912314c": "Zona de juegos en el recinto",
+  "3761de857a6800b9": "Estanterías empotradas",
+  "3a41daec93a38a2f": {
+    "c": "Política de mascotas",
+    "i": 1,
+    "t": "span"
+  },
+  "3cdf8e7db017416a": "Midtown es un barrio lleno de vida, popular entre estudiantes y personas creativas. Librerías independientes, cafeterías y espacios de coworking bordean sus calles arboladas. El campus universitario está a poca distancia en autobús.",
+  "3e2d97d90f585791": "Vestidor",
+  "426b290bbb703350": {
+    "c": "Vecindario",
+    "i": 1,
+    "t": "label"
+  },
+  "4340ae832c8505d2": "Baños privados en suite",
+  "489dde0ee63a8e39": "Se permiten mascotas con depósito",
+  "48c0ae905f56ec8b": {
+    "c": "Términos del arrendamiento",
+    "i": 1,
+    "t": "span"
+  },
+  "4fe8f6c9520fedcd": "Cocina con comedor",
+  "5736dc2a4db1574f": "Cualquiera",
+  "57e5d3ca9a87df5a": "Conserjería 24 horas",
+  "5925ac5456cd9570": "Chimenea de leña",
   "59dc1a3d2e22ff09": {
     "c": "Esta es una aplicación de ejemplo creada con General Translation para demostrar la internacionalización. Los listados son ficticios.",
     "i": 1,
     "t": "p"
   },
+  "5b1b15ad6ab4259e": {
+    "c": "Habitaciones",
+    "i": 1,
+    "t": "label"
+  },
   "5d31d40ce8ee4fa4": "Trastero",
+  "5e8afc477688a733": "Suelos de hormigón pulido",
+  "5fb50fbdc51e3a00": "Estudio",
+  "6043f738f6165af4": "Terraza en la azotea con barbacoa",
+  "633142531818d43d": "Lavandería compartida",
+  "64cd9889562757e3": "Balcón privado",
+  "6c2d5ea538e5598a": "Un encantador apartamento de un dormitorio en un edificio de ladrillo bien mantenido. La unidad cuenta con pisos de madera originales, accesorios renovados y una luminosa cocina comedor. El alquiler incluye un trastero privado en el sótano.",
+  "6c5ea9a553c4a567": "Todos los servicios incluidos",
   "6db45bb625543252": "Balcón",
-  "754e963468a00e39": "Explora anuncios de alquiler de apartamentos con precios de renta, metraje en pies cuadrados y fechas de disponibilidad. Aplicación de ejemplo internacionalizada creada con General Translation.",
+  "6f5aa104dff1fe9c": {
+    "c": "Ningún apartamento coincide con tus filtros. Intenta ajustar tus criterios.",
+    "i": 1,
+    "t": "p"
+  },
+  "7371e41e0852885f": "Disponible",
+  "754e963468a00e39": "Explora anuncios de alquiler de apartamentos con precios, superficie y fechas de disponibilidad. Aplicación de ejemplo con internacionalización creada con General Translation.",
   "75c4472b4b6490ff": {
     "c": [
       {
@@ -47,14 +121,53 @@
     "i": 1,
     "t": "div"
   },
+  "7bb62e862e275e1c": "Alquilado",
   "7eee09821771d4ef": "Piscina",
+  "7fc168e28936ad13": "Garaje para dos coches",
+  "7feba8327cf939a5": "Estacionamiento para bicicletas",
+  "801ab9f0f824c716": {
+    "c": "Ver detalles",
+    "i": 1,
+    "t": "span"
+  },
+  "8178bd53d138b9f7": "Contrato de arrendamiento mínimo de 12 meses",
+  "83a90377e0bc5c3c": "Lavadora y secadora en la vivienda",
+  "842caa5bab761ea4": {
+    "c": [
+      {
+        "c": {
+          "i": 3,
+          "k": "_gt_n_3",
+          "v": "n"
+        },
+        "i": 2,
+        "t": "div"
+      },
+      {
+        "c": "Baños",
+        "i": 4,
+        "t": "div"
+      }
+    ],
+    "i": 1,
+    "t": "div"
+  },
+  "883fbd51418a1ed8": "Techos altos",
   "88bf692e94c7aa8d": {
     "c": "Disponible desde",
     "i": 1,
     "t": "p"
   },
+  "8b79dbd1a20c323c": {
+    "c": "Servicios",
+    "i": 1,
+    "t": "h2"
+  },
   "8d6f1560281676b6": "Patio trasero",
-  "8f13f08c3b0f144e": "Zona céntrica",
+  "8e40786880e5dac7": "Gimnasio en el edificio",
+  "8efc2098528659e2": "Una luminosa unidad de esquina con ventanales de piso a techo que ofrecen vistas panorámicas del horizonte urbano del centro. La sala de estar de planta abierta se integra con una cocina moderna con encimeras de cuarzo y electrodomésticos de acero inoxidable. El balcón privado es ideal para tomar café por la mañana o relajarse por la noche.",
+  "8f13f08c3b0f144e": "Midtown",
+  "93227783b600a990": "Acceso controlado al edificio",
   "936030e4d68c0093": {
     "d": {
       "b": {
@@ -68,6 +181,7 @@
     "t": "Branch"
   },
   "9526096530d9dd85": "Lavadora y secadora en el apartamento",
+  "98512d6a13745400": "Un piso de lujo en un edificio con todos los servicios y comodidades tipo resort. La vivienda cuenta con una cocina abierta con barra de desayuno, una amplia sala de estar y dos dormitorios en suite. Los residentes disfrutan de una piscina climatizada, gimnasio y servicio de conserjería las 24 horas.",
   "9bc0b502c859fb3f": [
     {
       "c": "Studio",
@@ -80,10 +194,69 @@
       "t": "div"
     }
   ],
+  "9d9db8ee27960d99": "Internet de alta velocidad listo para usar",
+  "9f4c4d724d3b9ff6": "Piscina climatizada",
+  "a10389fea81c4dfb": "Cama abatible",
+  "a340352756ab1c67": {
+    "c": [
+      {
+        "c": {
+          "i": 3,
+          "k": "_gt_n_3",
+          "v": "n"
+        },
+        "i": 2,
+        "t": "div"
+      },
+      {
+        "c": "Piso",
+        "i": 4,
+        "t": "div"
+      }
+    ],
+    "i": 1,
+    "t": "div"
+  },
   "a92cc89723264db2": "Se aceptan mascotas",
-  "ad59fbd6e8cbd57d": "Lista de apartamentos | General Translation",
-  "b9d295d8e5f65005": "Lista de apartamentos",
-  "c4db0563af733cea": "Centro urbano",
+  "aa9c7163c6eef52d": "Un estudio acogedor y funcional, ideal para estudiantes o jóvenes profesionales. El ingenioso diseño del espacio aprovecha al máximo cada metro cuadrado, con una cama abatible, estanterías empotradas y una minicocina compacta pero totalmente equipada. Todos los servicios están incluidos en el alquiler.",
+  "abdacfd1f8f42c3e": "Lavandería en el edificio",
+  "ad59fbd6e8cbd57d": "Anuncios de apartamentos | General Translation",
+  "b0ef2a89072edf38": "Electrodomésticos de acero inoxidable",
+  "b1f106501a637521": {
+    "c": "Acerca de este apartamento",
+    "i": 1,
+    "t": "h2"
+  },
+  "b7d8e9efc9b1d17e": [
+    {
+      "c": {
+        "i": 2,
+        "k": "_gt_n_2",
+        "v": "n"
+      },
+      "i": 1,
+      "t": "div"
+    },
+    {
+      "c": "Habitaciones",
+      "i": 3,
+      "t": "div"
+    }
+  ],
+  "b7fa071704e07a96": {
+    "c": "Depósito de seguridad",
+    "i": 1,
+    "t": "span"
+  },
+  "b9d295d8e5f65005": "Anuncios de apartamentos",
+  "baf0b6e03ed5270d": "Lavavajillas",
+  "bed30b5a78920107": "Eastside es un barrio residencial exclusivo conocido por sus tiendas boutique, gastronomía de primer nivel y tours de arte los fines de semana. Hay varios parques y senderos naturales cerca, y la autopista permite un acceso rápido al centro de la ciudad.",
+  "bfffe125ff8a4657": "Se permiten gatos, no se permiten perros",
+  "c3e093b6212f9288": "Se permiten mascotas, sin límite de peso",
+  "c4db0563af733cea": "Centro",
+  "c538a96d0c45aa56": "Se permiten mascotas pequeñas previa aprobación",
+  "c5673c39473872eb": "No se permiten mascotas",
+  "c5de6c8ba6f14d3d": "El centro es el corazón cultural de la ciudad, con restaurantes, galerías y teatros a poca distancia a pie. El transporte público está a unos pasos y el parque frente al agua está a diez minutos a pie.",
   "c6ba05bed94a1f2e": [
     {
       "c": {
@@ -100,7 +273,9 @@
       "t": "div"
     }
   ],
-  "cda5bafb785abc99": "Gastos de servicios incluidos",
+  "ca0ff703366710f3": "Accesorios de cocina renovados",
+  "cda5bafb785abc99": "Servicios incluidos",
+  "ce99c919ebb27345": "Northgate es un barrio tranquilo y bien establecido, con un fuerte sentido de comunidad. Las panaderías locales, un mercado de agricultores semanal y una gran biblioteca pública lo convierten en un lugar acogedor al que llamar hogar. La estación de tren ligero está a dos cuadras.",
   "cfc5ee994decf283": {
     "c": [
       {
@@ -113,7 +288,7 @@
         "t": "div"
       },
       {
-        "c": "Pies cuadrados",
+        "c": "m²",
         "i": 4,
         "t": "div"
       }
@@ -121,6 +296,7 @@
     "i": 1,
     "t": "div"
   },
+  "d160f9b273a85448": "Estacionamiento en la calle",
   "d193c5ae7621cfee": [
     {
       "c": "Encuentra tu próximo hogar",
@@ -133,8 +309,41 @@
       "t": "p"
     }
   ],
+  "d3b391ea41838f9a": "Los suburbios ofrecen un entorno tranquilo con calles arboladas, escuelas de primera categoría y parques familiares. Un centro comercial de barrio con supermercados y restaurantes está a cinco minutos en coche.",
+  "d6e16549f9771a5f": "Cocineta totalmente equipada",
+  "dece3a8d7fdc72fb": [
+    {
+      "c": "¿Te interesa este apartamento?",
+      "i": 1,
+      "t": "h3"
+    },
+    {
+      "c": "Contáctanos para programar una visita o hacer preguntas sobre este anuncio.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
   "dfd487872b91cac1": "Acceso al gimnasio",
+  "e0b4460d13982a86": {
+    "c": "Estado",
+    "i": 1,
+    "t": "label"
+  },
+  "e79e428840f34d60": {
+    "c": "Enviar un mensaje",
+    "i": 1,
+    "t": "button"
+  },
+  "ea05b3b7eccd1f4b": "Plaza de aparcamiento asignada",
+  "eaf5e66073181bd3": "Trastero privado en el sótano",
+  "eca3714fa3d7acef": "Aire acondicionado central",
   "eceaac15ae972195": "Northgate",
+  "f0b7b18b8a7c90ea": "Encimeras de cuarzo",
+  "f2010664560baf0d": "Sistema de casilleros para paquetes",
   "f32470842c5a6ed4": "Zona este",
-  "fc52ec8afd27a26c": "Conserje"
+  "f3499e0669a45652": "Gimnasio",
+  "fa0247f67397d398": "Contrato de arrendamiento mínimo de 6 meses",
+  "fa51cff80697321a": "El distrito de Waterfront es una zona animada con restaurantes de mariscos, mercados de agricultores los fines de semana y pintorescos senderos peatonales junto al puerto. La terminal de transbordadores conecta con islas cercanas.",
+  "fc52ec8afd27a26c": "Conserje",
+  "ffb29c95afe950ed": "Aparcamiento para visitantes"
 }

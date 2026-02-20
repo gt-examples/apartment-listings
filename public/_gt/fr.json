@@ -1,7 +1,33 @@
 {
-  "086c2b2c7f30f4e6": "Terrasse sur le toit",
+  "04f2422fab35977a": "Consultez les annonces de location d’appartements avec le loyer, la superficie et les dates de disponibilité.",
+  "084c49bd862ec11e": "Dressings intégrés",
+  "086b1e1810412c7c": "Un loft industriel chic avec des murs en briques apparentes, des sols en béton ciré et de hauts plafonds. De grandes fenêtres donnent sur le port et la marina. L’immeuble comprend une salle de sport ultramoderne et un toit-terrasse commun avec des espaces de grillades.",
+  "086c2b2c7f30f4e6": "Toit-terrasse",
+  "0911be64622e39c0": {
+    "c": "Année de construction",
+    "i": 1,
+    "t": "span"
+  },
   "0a4235bb4daeceb6": "Parking",
-  "0cc2c983267b6a33": "En bord de l’eau",
+  "0cc2c983267b6a33": "Bord de l’eau",
+  "0dac3ea9220920cb": "Service de maintenance sur site",
+  "1068d395a654abe0": "Parquet en bois massif",
+  "127b7b09c18e7b94": "Chauffage et climatisation centralisés",
+  "16e0210363e28906": "Cour commune",
+  "1b30525016a4a13a": "Immeuble non-fumeur",
+  "1b5fa67a9e949445": "Jardin arrière privé clôturé",
+  "1bfd642051e4c3e3": "Animaux acceptés, avec restrictions de races",
+  "1c077c519e30b2a5": {
+    "c": "Planifier une visite",
+    "i": 1,
+    "t": "button"
+  },
+  "1e1450d0a299f3db": "Un appartement familial spacieux dans une résidence calme. Le séjour ouvert dispose d’une cheminée à bois et s’ouvre sur une salle à manger lumineuse. Le jardin privatif est entièrement clôturé, et le garage attenant pouvant accueillir deux voitures offre un stationnement sécurisé ainsi qu’un espace de rangement supplémentaire.",
+  "21be148c67f10152": {
+    "c": "Ceci est une démo. Aucune vraie demande n'est envoyée.",
+    "i": 1,
+    "t": "p"
+  },
   "22415b5e1a947325": [
     {
       "i": 1,
@@ -16,17 +42,65 @@
       "t": "span"
     }
   ],
+  "2279240270b474d7": "Parking pour vélos",
+  "246bbccc390f0013": "Retour à toutes les annonces",
   "25e98cb6f6224632": "Banlieue",
   "2bb522b7c3bffdad": "Cheminée",
+  "3061706374d3eb44": "Bar à petit-déjeuner",
+  "33e4c51fffdbdc05": "Murs en briques apparentes",
+  "353b08f4363dbb2c": "En attente",
   "359d95ca9f95ce5a": "Garage",
+  "35edf50de912314c": "Aire de jeux sur place",
+  "3761de857a6800b9": "Étagères intégrées",
+  "3a41daec93a38a2f": {
+    "c": "Politique concernant les animaux",
+    "i": 1,
+    "t": "span"
+  },
+  "3cdf8e7db017416a": "Midtown est un quartier dynamique, apprécié des étudiants et des créatifs. Des librairies indépendantes, des cafés et des espaces de coworking bordent les rues bordées d’arbres. Le campus universitaire se trouve à quelques minutes en bus.",
+  "3e2d97d90f585791": "Dressing aménagé",
+  "426b290bbb703350": {
+    "c": "Quartier",
+    "i": 1,
+    "t": "label"
+  },
+  "4340ae832c8505d2": "Salles de bains attenantes",
+  "489dde0ee63a8e39": "Animaux acceptés moyennant un dépôt de garantie",
+  "48c0ae905f56ec8b": {
+    "c": "Conditions de bail",
+    "i": 1,
+    "t": "span"
+  },
+  "4fe8f6c9520fedcd": "Cuisine avec coin repas",
+  "5736dc2a4db1574f": "Tous",
+  "57e5d3ca9a87df5a": "Conciergerie 24 h/24",
+  "5925ac5456cd9570": "Cheminée à bois",
   "59dc1a3d2e22ff09": {
     "c": "Voici un exemple d'application construite avec General Translation pour illustrer l'internationalisation. Les annonces sont fictives.",
     "i": 1,
     "t": "p"
   },
-  "5d31d40ce8ee4fa4": "Espace de stockage",
+  "5b1b15ad6ab4259e": {
+    "c": "Chambres",
+    "i": 1,
+    "t": "label"
+  },
+  "5d31d40ce8ee4fa4": "Espace de rangement",
+  "5e8afc477688a733": "Sol en béton poli",
+  "5fb50fbdc51e3a00": "Studio",
+  "6043f738f6165af4": "Toit-terrasse avec barbecue",
+  "633142531818d43d": "Buanderie commune",
+  "64cd9889562757e3": "Balcon privé",
+  "6c2d5ea538e5598a": "Un charmant appartement d’une chambre dans un immeuble en briques bien entretenu. Le logement comprend un parquet d’origine, des équipements modernisés et une cuisine ensoleillée avec coin repas. Un espace de rangement privatif au sous-sol est inclus dans la location.",
+  "6c5ea9a553c4a567": "Toutes charges incluses",
   "6db45bb625543252": "Balcon",
-  "754e963468a00e39": "Parcourez des annonces de location d’appartements avec loyers, surfaces (en pieds carrés) et dates de disponibilité. Application d’exemple internationalisée, créée avec General Translation.",
+  "6f5aa104dff1fe9c": {
+    "c": "Aucun appartement ne correspond à vos filtres. Essayez d'ajuster vos critères.",
+    "i": 1,
+    "t": "p"
+  },
+  "7371e41e0852885f": "Disponible",
+  "754e963468a00e39": "Parcourez des annonces de location d’appartements incluant le loyer, la superficie et la date de disponibilité. Une application de démonstration internationalisée, créée avec General Translation.",
   "75c4472b4b6490ff": {
     "c": [
       {
@@ -47,14 +121,53 @@
     "i": 1,
     "t": "div"
   },
+  "7bb62e862e275e1c": "Loué",
   "7eee09821771d4ef": "Piscine",
+  "7fc168e28936ad13": "Garage pour deux voitures",
+  "7feba8327cf939a5": "Local à vélos",
+  "801ab9f0f824c716": {
+    "c": "Voir les détails",
+    "i": 1,
+    "t": "span"
+  },
+  "8178bd53d138b9f7": "Bail d’une durée minimale de 12 mois",
+  "83a90377e0bc5c3c": "Lave-linge et sèche-linge dans l’appartement",
+  "842caa5bab761ea4": {
+    "c": [
+      {
+        "c": {
+          "i": 3,
+          "k": "_gt_n_3",
+          "v": "n"
+        },
+        "i": 2,
+        "t": "div"
+      },
+      {
+        "c": "Salles de bain",
+        "i": 4,
+        "t": "div"
+      }
+    ],
+    "i": 1,
+    "t": "div"
+  },
+  "883fbd51418a1ed8": "Plafonds hauts",
   "88bf692e94c7aa8d": {
     "c": "Disponible depuis",
     "i": 1,
     "t": "p"
   },
-  "8d6f1560281676b6": "Jardin",
-  "8f13f08c3b0f144e": "Quartier central",
+  "8b79dbd1a20c323c": {
+    "c": "Équipements",
+    "i": 1,
+    "t": "h2"
+  },
+  "8d6f1560281676b6": "Cour arrière",
+  "8e40786880e5dac7": "Salle de sport dans l’immeuble",
+  "8efc2098528659e2": "Un appartement d’angle lumineux avec des baies vitrées du sol au plafond offrant une vue panoramique sur le centre-ville. Le séjour ouvert donne sur une cuisine moderne équipée de plans de travail en quartz et d’appareils électroménagers en acier inoxydable. Le balcon privé est idéal pour le café du matin ou pour se détendre le soir.",
+  "8f13f08c3b0f144e": "Midtown",
+  "93227783b600a990": "Accès contrôlé à l’immeuble",
   "936030e4d68c0093": {
     "d": {
       "b": {
@@ -67,7 +180,8 @@
     "i": 1,
     "t": "Branch"
   },
-  "9526096530d9dd85": "Lave-linge dans le logement",
+  "9526096530d9dd85": "Buanderie dans le logement",
+  "98512d6a13745400": "Un appartement de standing dans un immeuble offrant des services complets et des prestations de type résidence hôtelière. Le logement comprend une cuisine ouverte avec coin bar pour le petit-déjeuner, un vaste espace de vie et deux chambres avec salle de bains attenante. Les résidents profitent d’une piscine chauffée, d’une salle de sport et d’un service de conciergerie disponible 24 h/24.",
   "9bc0b502c859fb3f": [
     {
       "c": "Studio",
@@ -80,10 +194,69 @@
       "t": "div"
     }
   ],
+  "9d9db8ee27960d99": "Internet haut débit disponible",
+  "9f4c4d724d3b9ff6": "Piscine chauffée",
+  "a10389fea81c4dfb": "Lit escamotable",
+  "a340352756ab1c67": {
+    "c": [
+      {
+        "c": {
+          "i": 3,
+          "k": "_gt_n_3",
+          "v": "n"
+        },
+        "i": 2,
+        "t": "div"
+      },
+      {
+        "c": "Étage",
+        "i": 4,
+        "t": "div"
+      }
+    ],
+    "i": 1,
+    "t": "div"
+  },
   "a92cc89723264db2": "Animaux acceptés",
-  "ad59fbd6e8cbd57d": "Annonces d’appartements | General Translation",
-  "b9d295d8e5f65005": "Annonces d’appartements",
+  "aa9c7163c6eef52d": "Un studio confortable et fonctionnel, idéal pour des étudiants ou de jeunes actifs. Son agencement ingénieux optimise chaque mètre carré, avec un lit escamotable, des étagères intégrées et une kitchenette compacte mais entièrement équipée. Toutes les charges sont incluses dans le loyer.",
+  "abdacfd1f8f42c3e": "Laverie sur place",
+  "ad59fbd6e8cbd57d": "Annonces de location d’appartements | General Translation",
+  "b0ef2a89072edf38": "Appareils électroménagers en acier inoxydable",
+  "b1f106501a637521": {
+    "c": "À propos de cet appartement",
+    "i": 1,
+    "t": "h2"
+  },
+  "b7d8e9efc9b1d17e": [
+    {
+      "c": {
+        "i": 2,
+        "k": "_gt_n_2",
+        "v": "n"
+      },
+      "i": 1,
+      "t": "div"
+    },
+    {
+      "c": "Chambres",
+      "i": 3,
+      "t": "div"
+    }
+  ],
+  "b7fa071704e07a96": {
+    "c": "Dépôt de garantie",
+    "i": 1,
+    "t": "span"
+  },
+  "b9d295d8e5f65005": "Annonces de location d’appartements",
+  "baf0b6e03ed5270d": "Lave-vaisselle",
+  "bed30b5a78920107": "The Eastside est un quartier huppé, réputé pour ses boutiques, ses restaurants gastronomiques et ses parcours artistiques le week-end. Plusieurs parcs et sentiers de randonnée se trouvent à proximité, et la voie rapide permet de rejoindre rapidement le centre-ville.",
+  "bfffe125ff8a4657": "Chats acceptés, chiens interdits",
+  "c3e093b6212f9288": "Animaux acceptés, sans restriction de poids",
   "c4db0563af733cea": "Centre-ville",
+  "c538a96d0c45aa56": "Petits animaux acceptés sous réserve d’accord préalable",
+  "c5673c39473872eb": "Animaux interdits",
+  "c5de6c8ba6f14d3d": "Le centre-ville est le cœur culturel de la ville, avec des restaurants, des galeries et des théâtres accessibles à pied. Les transports en commun se trouvent à quelques pas, et le parc en bord de l’eau est à dix minutes de marche.",
   "c6ba05bed94a1f2e": [
     {
       "c": {
@@ -100,7 +273,9 @@
       "t": "div"
     }
   ],
+  "ca0ff703366710f3": "Équipements de cuisine modernes",
   "cda5bafb785abc99": "Charges comprises",
+  "ce99c919ebb27345": "Northgate est un quartier résidentiel calme et bien établi, avec un fort esprit de communauté. Des boulangeries de quartier, un marché fermier hebdomadaire et une grande bibliothèque municipale en font un endroit agréable où vivre. La station de tramway se trouve à deux pâtés de maisons.",
   "cfc5ee994decf283": {
     "c": [
       {
@@ -121,6 +296,7 @@
     "i": 1,
     "t": "div"
   },
+  "d160f9b273a85448": "Stationnement dans la rue",
   "d193c5ae7621cfee": [
     {
       "c": "Trouvez votre prochain logement",
@@ -133,8 +309,41 @@
       "t": "p"
     }
   ],
-  "dfd487872b91cac1": "Accès à la salle de sport",
+  "d3b391ea41838f9a": "The Suburbs offre une atmosphère paisible, avec ses rues bordées d’arbres, ses écoles très bien cotées et ses parcs familiaux. Un centre commercial de quartier, avec supermarchés et restaurants, se trouve à cinq minutes en voiture.",
+  "d6e16549f9771a5f": "Kitchenette entièrement équipée",
+  "dece3a8d7fdc72fb": [
+    {
+      "c": "Intéressé par cet appartement ?",
+      "i": 1,
+      "t": "h3"
+    },
+    {
+      "c": "Contactez-nous pour planifier une visite ou poser des questions sur cette annonce.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "dfd487872b91cac1": "Accès à une salle de sport",
+  "e0b4460d13982a86": {
+    "c": "Statut",
+    "i": 1,
+    "t": "label"
+  },
+  "e79e428840f34d60": {
+    "c": "Envoyer un message",
+    "i": 1,
+    "t": "button"
+  },
+  "ea05b3b7eccd1f4b": "Place de parking réservée",
+  "eaf5e66073181bd3": "Espace de rangement privé au sous-sol",
+  "eca3714fa3d7acef": "Climatisation centrale",
   "eceaac15ae972195": "Northgate",
-  "f32470842c5a6ed4": "Quartier est",
-  "fc52ec8afd27a26c": "Concierge"
+  "f0b7b18b8a7c90ea": "Plans de travail en quartz",
+  "f2010664560baf0d": "Consignes à colis",
+  "f32470842c5a6ed4": "Quartier Est",
+  "f3499e0669a45652": "Salle de sport",
+  "fa0247f67397d398": "Bail d’une durée minimale de 6 mois",
+  "fa51cff80697321a": "Le quartier Waterfront est un secteur animé avec des restaurants de fruits de mer, des marchés de producteurs le week-end et des promenades pittoresques le long du port. Le terminal des ferries permet de rejoindre les îles voisines.",
+  "fc52ec8afd27a26c": "Concierge",
+  "ffb29c95afe950ed": "Parking visiteurs"
 }

@@ -2,94 +2,10 @@ import { T, Branch } from "gt-next";
 import { getGT } from "gt-next/server";
 import { LocaleSelector } from "gt-next";
 import { Num, Currency, DateTime } from "gt-next";
-
-interface Apartment {
-  id: number;
-  name: string;
-  neighborhood: string;
-  bedrooms: number;
-  bathrooms: number;
-  sqft: number;
-  rent: number;
-  availableFrom: string;
-  features: string[];
-  status: "available" | "pending" | "leased";
-}
-
-const apartments: Apartment[] = [
-  {
-    id: 1,
-    name: "Sunset Terrace",
-    neighborhood: "Downtown",
-    bedrooms: 2,
-    bathrooms: 1,
-    sqft: 850,
-    rent: 2400,
-    availableFrom: "2026-03-01",
-    features: ["In-unit laundry", "Balcony", "Parking"],
-    status: "available",
-  },
-  {
-    id: 2,
-    name: "Harbor View Loft",
-    neighborhood: "Waterfront",
-    bedrooms: 1,
-    bathrooms: 1,
-    sqft: 620,
-    rent: 1850,
-    availableFrom: "2026-03-15",
-    features: ["Gym access", "Rooftop deck"],
-    status: "available",
-  },
-  {
-    id: 3,
-    name: "Elm Street Studio",
-    neighborhood: "Midtown",
-    bedrooms: 0,
-    bathrooms: 1,
-    sqft: 420,
-    rent: 1200,
-    availableFrom: "2026-02-20",
-    features: ["Utilities included", "Pet friendly"],
-    status: "pending",
-  },
-  {
-    id: 4,
-    name: "Maple Court",
-    neighborhood: "Suburbs",
-    bedrooms: 3,
-    bathrooms: 2,
-    sqft: 1200,
-    rent: 3100,
-    availableFrom: "2026-04-01",
-    features: ["Garage", "Backyard", "Fireplace", "In-unit laundry"],
-    status: "available",
-  },
-  {
-    id: 5,
-    name: "Pine Ridge Flat",
-    neighborhood: "Eastside",
-    bedrooms: 2,
-    bathrooms: 2,
-    sqft: 950,
-    rent: 2750,
-    availableFrom: "2026-03-10",
-    features: ["Gym access", "Pool", "Concierge"],
-    status: "leased",
-  },
-  {
-    id: 6,
-    name: "Birch Lane Apartment",
-    neighborhood: "Northgate",
-    bedrooms: 1,
-    bathrooms: 1,
-    sqft: 550,
-    rent: 1450,
-    availableFrom: "2026-05-01",
-    features: ["Pet friendly", "Storage unit"],
-    status: "available",
-  },
-];
+import Link from "next/link";
+import { apartments } from "@/data/apartments";
+import type { Apartment } from "@/data/apartments";
+import ApartmentFilters from "@/components/ApartmentFilters";
 
 function StatusBadge({ status }: { status: Apartment["status"] }) {
   const colors = {
@@ -121,8 +37,30 @@ function FeatureTag({ feature }: { feature: string }) {
   );
 }
 
-export default async function Home() {
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
   const gt = await getGT();
+  const params = await searchParams;
+
+  const bedroomFilter = params.bedrooms ? String(params.bedrooms) : "any";
+  const neighborhoodFilter = params.neighborhood
+    ? String(params.neighborhood)
+    : "any";
+  const statusFilter = params.status ? String(params.status) : "any";
+
+  const filtered = apartments.filter((apt) => {
+    if (bedroomFilter !== "any") {
+      const beds = parseInt(bedroomFilter);
+      if (apt.bedrooms !== beds) return false;
+    }
+    if (neighborhoodFilter !== "any" && apt.neighborhood !== neighborhoodFilter)
+      return false;
+    if (statusFilter !== "any" && apt.status !== statusFilter) return false;
+    return true;
+  });
 
   const featureTranslations: Record<string, string> = {
     "In-unit laundry": gt("In-unit laundry"),
@@ -212,95 +150,120 @@ export default async function Home() {
           </T>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {apartments.map((apt) => (
-            <div
-              key={apt.id}
-              className="rounded-xl border border-neutral-800 bg-neutral-900 p-5 flex flex-col gap-4 hover:border-neutral-700 transition-colors"
-            >
-              <div className="flex items-start justify-between gap-2">
+        <ApartmentFilters
+          currentBedrooms={bedroomFilter}
+          currentNeighborhood={neighborhoodFilter}
+          currentStatus={statusFilter}
+        />
+
+        {filtered.length === 0 ? (
+          <div className="text-center py-16">
+            <T>
+              <p className="text-neutral-400 text-sm">
+                No apartments match your filters. Try adjusting your criteria.
+              </p>
+            </T>
+          </div>
+        ) : (
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {filtered.map((apt) => (
+              <Link
+                key={apt.id}
+                href={`/apartment/${apt.slug}`}
+                className="rounded-xl border border-neutral-800 bg-neutral-900 p-5 flex flex-col gap-4 hover:border-neutral-600 transition-colors group"
+              >
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <h3 className="text-base font-semibold text-neutral-100 group-hover:text-white transition-colors">
+                      {apt.name}
+                    </h3>
+                    <p className="text-sm text-neutral-400">
+                      {neighborhoodTranslations[apt.neighborhood] ??
+                        apt.neighborhood}
+                    </p>
+                  </div>
+                  <StatusBadge status={apt.status} />
+                </div>
+
+                <div className="text-2xl font-bold text-neutral-100">
+                  <T>
+                    <Currency currency="USD">{apt.rent}</Currency>
+                    <span className="text-sm font-normal text-neutral-500">
+                      {" "}
+                      / month
+                    </span>
+                  </T>
+                </div>
+
+                <div className="grid grid-cols-3 gap-3 text-center">
+                  <div className="rounded-lg bg-neutral-800/50 p-2">
+                    {apt.bedrooms === 0 ? (
+                      <T>
+                        <div className="text-sm font-semibold text-neutral-100">
+                          Studio
+                        </div>
+                        <div className="text-xs text-neutral-500">Type</div>
+                      </T>
+                    ) : (
+                      <T>
+                        <div className="text-sm font-semibold text-neutral-100">
+                          <Num>{apt.bedrooms}</Num>
+                        </div>
+                        <div className="text-xs text-neutral-500">Beds</div>
+                      </T>
+                    )}
+                  </div>
+                  <T>
+                    <div className="rounded-lg bg-neutral-800/50 p-2">
+                      <div className="text-sm font-semibold text-neutral-100">
+                        <Num>{apt.bathrooms}</Num>
+                      </div>
+                      <div className="text-xs text-neutral-500">Baths</div>
+                    </div>
+                  </T>
+                  <T>
+                    <div className="rounded-lg bg-neutral-800/50 p-2">
+                      <div className="text-sm font-semibold text-neutral-100">
+                        <Num>{apt.sqft}</Num>
+                      </div>
+                      <div className="text-xs text-neutral-500">Sq Ft</div>
+                    </div>
+                  </T>
+                </div>
+
                 <div>
-                  <h3 className="text-base font-semibold text-neutral-100">
-                    {apt.name}
-                  </h3>
-                  <p className="text-sm text-neutral-400">
-                    {neighborhoodTranslations[apt.neighborhood] ??
-                      apt.neighborhood}
+                  <T>
+                    <p className="text-xs text-neutral-500 mb-1">
+                      Available from
+                    </p>
+                  </T>
+                  <p className="text-sm text-neutral-300">
+                    <DateTime options={{ dateStyle: "medium" }}>
+                      {new Date(apt.availableFrom)}
+                    </DateTime>
                   </p>
                 </div>
-                <StatusBadge status={apt.status} />
-              </div>
 
-              <div className="text-2xl font-bold text-neutral-100">
-                <T>
-                  <Currency currency="USD">{apt.rent}</Currency>
-                  <span className="text-sm font-normal text-neutral-500">
-                    {" "}
-                    / month
-                  </span>
-                </T>
-              </div>
-
-              <div className="grid grid-cols-3 gap-3 text-center">
-                <div className="rounded-lg bg-neutral-800/50 p-2">
-                  {apt.bedrooms === 0 ? (
-                    <T>
-                      <div className="text-sm font-semibold text-neutral-100">
-                        Studio
-                      </div>
-                      <div className="text-xs text-neutral-500">Type</div>
-                    </T>
-                  ) : (
-                    <T>
-                      <div className="text-sm font-semibold text-neutral-100">
-                        <Num>{apt.bedrooms}</Num>
-                      </div>
-                      <div className="text-xs text-neutral-500">Beds</div>
-                    </T>
-                  )}
+                <div className="flex flex-wrap gap-1.5">
+                  {apt.features.map((f) => (
+                    <FeatureTag
+                      key={f}
+                      feature={featureTranslations[f] ?? f}
+                    />
+                  ))}
                 </div>
-                <T>
-                  <div className="rounded-lg bg-neutral-800/50 p-2">
-                    <div className="text-sm font-semibold text-neutral-100">
-                      <Num>{apt.bathrooms}</Num>
-                    </div>
-                    <div className="text-xs text-neutral-500">Baths</div>
-                  </div>
-                </T>
-                <T>
-                  <div className="rounded-lg bg-neutral-800/50 p-2">
-                    <div className="text-sm font-semibold text-neutral-100">
-                      <Num>{apt.sqft}</Num>
-                    </div>
-                    <div className="text-xs text-neutral-500">Sq Ft</div>
-                  </div>
-                </T>
-              </div>
 
-              <div>
-                <T>
-                  <p className="text-xs text-neutral-500 mb-1">
-                    Available from
-                  </p>
-                </T>
-                <p className="text-sm text-neutral-300">
-                  <DateTime options={{ dateStyle: "medium" }}>
-                    {new Date(apt.availableFrom)}
-                  </DateTime>
-                </p>
-              </div>
-
-              <div className="flex flex-wrap gap-1.5">
-                {apt.features.map((f) => (
-                  <FeatureTag
-                    key={f}
-                    feature={featureTranslations[f] ?? f}
-                  />
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
+                <div className="mt-auto pt-2">
+                  <T>
+                    <span className="text-xs text-neutral-500 group-hover:text-neutral-300 transition-colors">
+                      View details
+                    </span>
+                  </T>
+                </div>
+              </Link>
+            ))}
+          </div>
+        )}
       </main>
     </div>
   );
